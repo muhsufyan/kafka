@@ -1,0 +1,18 @@
+version: '3'
+
+  # kafka(kafka" dikumpulkan jd kafka cluster) itu perlu zookeeper(zookeper" dikumpulkan jd zookeper cluster). jd kita perlu 2 service
+  # zookeeper: management kafka(mengatur&menentukan kafka mana untuk tugas A), jd kafka itu sprti pekerja(data) sedangkan zookeeper managernya
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - 2181:2181
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    ports:
+      - 9092:9092
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
