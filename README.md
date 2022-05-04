@@ -24,8 +24,13 @@
 <ul>kafka-python dan Faker(untuk membuat data dummy)</ul>
 <ul>config yg perlu dlm producer yaitu bootstrap_server(alamat server kafka yg dituju, ini berupa ip dan port), topic (as tabel di sql), value_serializer(data yg akan dikirim)</ul>
 <ul>skenarionya adlh semua data akan di publish ke 1 partisi</ul>
+<h1>p2 producer 1 topic 2 partisi</h1>
+<ul>kita buat producer  dg 1 topic 2 partisi dan 1 broker</ul>
+<ul>data/message akan di publish/dikirim ke 2 buah partisi</ul>
+<ul>data/message nya dipublish scra random(bisa ke partisi 1 / partisi 2)</ul>
 <ul></ul>
 <h1>sumber</h1>
 <ul>setting kafka dengan docker https://www.youtube.com/watch?v=FlAlz8guJeM</ul>
 <ul>producer consumer code https://www.youtube.com/watch?v=LHNtL4zDBuk</ul>
 <ul>p1 producer https://www.youtube.com/watch?v=Q4XA5nUpLeo&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=7</ul>
+<ul>p2 producer 1 topic 2 partisi https://www.youtube.com/watch?v=AvXjRswx9n8&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=8</ul>
