@@ -20,7 +20,12 @@
 <b>kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic namatopic --from-beginning</b></ul>
 <h1>dengan code </h1>
 <ul>python -m venv venv <br> pip install kafka-python</ul>
-
+<h1>p1 producer</h1>
+<ul>kafka-python dan Faker(untuk membuat data dummy)</ul>
+<ul>config yg perlu dlm producer yaitu bootstrap_server(alamat server kafka yg dituju, ini berupa ip dan port), topic (as tabel di sql), value_serializer(data yg akan dikirim)</ul>
+<ul>skenarionya adlh semua data akan di publish ke 1 partisi</ul>
+<ul></ul>
 <h1>sumber</h1>
 <ul>setting kafka dengan docker https://www.youtube.com/watch?v=FlAlz8guJeM</ul>
 <ul>producer consumer code https://www.youtube.com/watch?v=LHNtL4zDBuk</ul>
+<ul>p1 producer https://www.youtube.com/watch?v=Q4XA5nUpLeo&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=7</ul>

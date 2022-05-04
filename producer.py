@@ -26,6 +26,7 @@ if __name__ == '__main__':
         
         # Send it to our 'messages' topic
         print(f'Producing message @ {datetime.now()} | Message = {str(dummy_message)}')
+        # kirim ke topic dg nama messages dan datanya adalah data di dummy_message
         producer.send('messages', dummy_message)
         
         # Sleep for a random number of seconds
