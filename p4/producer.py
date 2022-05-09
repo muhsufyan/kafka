@@ -1,11 +1,16 @@
 import json
-from time import time
+import time
 from kafka import KafkaProducer
 
 from data import create_data
+
+
+
+# from data import create_data
 # ubah data jd format json
 def json_serializer(data):
-    return json.dump(data).encode("utf-8")
+    return json.dumps(data).encode("utf-8")
+
 # data (value_serialize) akan dibuat dlm data.py (dummy data). bootstrap_server disini adlh server kafka
 producer = KafkaProducer(bootstrap_servers=['localhost:9092'],
                         value_serializer=json_serializer)
