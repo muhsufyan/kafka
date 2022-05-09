@@ -51,6 +51,24 @@
 <ul>bersifat mandatory, untuk setiap consumer hrs ter-registrasi kedalam consumer group</ul>
 <ul>consumer hidup didalam consumer group (consumer group ibaratnya wadah untuk sekumpulan consumer)</ul>
 
+<h1>p5 consumer group dg 1 topic 2 partisi dan 1 consumer</h1>
+<ul>1 consumer dpt mengonsumsi 1/banyak partisi</ul>
+<ul>kasus ini producer akan publish msg ke partisi scra acak/random</ul>
+<ul>msg yg disimpan dlm 2 parisi akan consumed oleh 1 buah consumer (1 consumer ini akan mengonsumsi 2 partisi yaitu P0 & P1)</ul>
+<ul>IMPLEMENTASI CODINGANNYA SAMA SPRTI P4 YG BEDA HANYA JUMLAH SET PARTISI DI topic.py diubah dari 1 jd 2</ul>
+
+<h1>p6 consumer group dg 1 partisi, 1 topic dan 2 consumer</h1>
+<ul><del>2 consumer akan berada dlm 1 consumer group (karena sama" mengonsum 1 partisi yg sama)</del><br>
+kasus ini, 1 partisi akan consumed by 1 consumer dimana terdpt 2 consumer didlm 1 consumer group</ul>
+<ul>1 partisi yg sama tdk dpt assigned ke banyak konsumer dlm 1 group consumer</ul>
+<ul>pertama buat topic dg 1 partisi saja, lalu run consumer.py sebanyak 2 diterminal, dan run producer.py 1 </ul>
+<ul>run 1 terminal consumer_b.py maka group-consumer-A dan B akan consume msg secara </ul>
+
+<h1>p7 consumer group dg 1 topic, 2 partition and 2 consumer</h1>
+<ul>kasus kali ini 2 consumer yg berada didlm 1 consumer-group yg sama akan consume 1 partisi misalnya c1 consume p0 dan c2 consume p1</ul>
+<ul></ul>
+<ul></ul>
+
 <h1>sumber</h1>
 <ul>setting kafka dengan docker https://www.youtube.com/watch?v=FlAlz8guJeM</ul>
 <ul>producer consumer code https://www.youtube.com/watch?v=LHNtL4zDBuk</ul>
@@ -59,3 +77,5 @@
 <ul>p2 producer 1 topic 2 partisi https://www.youtube.com/watch?v=AvXjRswx9n8&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=8</ul>
 <ul>p3 producer mengirim pesan ke 1 buah partisi suatu topic yg ditentukan https://www.youtube.com/watch?v=kuvTB5SVSJc&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=9</ul>
 <ul>p4 Apa itu consumer group ? https://www.youtube.com/watch?v=gn2zLFRQ8rI&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=11 </ul>
+<ul>p6 https://www.youtube.com/watch?v=TSSXWeusq-k&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=14</ul>
+<ul>p7 consumer group dg 1 topic, 2 partition and 2 consumer https://www.youtube.com/watch?v=_sQAoL60urk&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=14</ul>
