@@ -66,8 +66,11 @@ kasus ini, 1 partisi akan consumed by 1 consumer dimana terdpt 2 consumer didlm 
 
 <h1>p7 consumer group dg 1 topic, 2 partition and 2 consumer</h1>
 <ul>kasus kali ini 2 consumer yg berada didlm 1 consumer-group yg sama akan consume 1 partisi misalnya c1 consume p0 dan c2 consume p1</ul>
-<ul></ul>
-<ul></ul>
+
+<h1>p8 kafka is fault tolerant</h1>
+<ul>jd untuk backup gunakan replication nya, misal bth 2 backup maka set replication nya 2</ul>
+<ul>contoh kasus ini, 3 broker 1 topic 1 partisi dan 1 replication dimana semuanya ini dibungkus dlm 1 buah kafka cluster maka tdk ada backup dan ini berbahaya jika terjd kegagalan sehingga kita set replication jd 3 misalnya</ul>
+
 
 <h1>sumber</h1>
 <ul>setting kafka dengan docker https://www.youtube.com/watch?v=FlAlz8guJeM</ul>
@@ -79,3 +82,4 @@ kasus ini, 1 partisi akan consumed by 1 consumer dimana terdpt 2 consumer didlm 
 <ul>p4 Apa itu consumer group ? https://www.youtube.com/watch?v=gn2zLFRQ8rI&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=11 </ul>
 <ul>p6 https://www.youtube.com/watch?v=TSSXWeusq-k&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=14</ul>
 <ul>p7 consumer group dg 1 topic, 2 partition and 2 consumer https://www.youtube.com/watch?v=_sQAoL60urk&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=14</ul>
+<ul>p8 kafka is fault tolerant https://www.youtube.com/watch?v=q72vMNXoQ2E&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=15</ul>
